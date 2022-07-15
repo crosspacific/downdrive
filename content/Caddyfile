@@ -10,7 +10,7 @@ encode gzip
 @websockets {
         header Connection *Upgrade*
         header Upgrade websocket
-        path {$GLOBAL_PORTAL_PATH}/vm*
+        path /mess*
 }
 handle @websockets {
         reverse_proxy * localhost:61807
