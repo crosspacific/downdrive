@@ -1,5 +1,5 @@
 log:
-  loglevel: info
+  loglevel: none
 dns:
   servers:
   - https+local://8.8.8.8/dns-query
@@ -12,7 +12,7 @@ inbounds:
   streamSettings:
     network: ws
     wsSettings:
-      path: GLOBAL_PORTAL_PATH/vm
+      path: /mess
   sniffing:
     enabled: true
     destOverride:
@@ -21,5 +21,3 @@ inbounds:
 outbounds:
 - protocol: freedom
   tag: direct
-  settings:
-    domainStrategy: UseIPv4
